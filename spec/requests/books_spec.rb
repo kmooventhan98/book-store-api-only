@@ -59,12 +59,13 @@ describe "books API",  type: :request do
     end
 
     describe 'POST /books' do
+        let!(:user) {FactoryBot.create(:user, password: 'password')}
         it 'create a book' do
             expect {
                 post '/api/v1/books', params:{ 
                     book: {title: "ruby programming"},
                     author: {first_name: 'Andy', last_name: 'Weir', age: '48'}
-                }
+                }, headers: {"Authorization" => "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.DiPWrOKsx3sPeVClrm_j07XNdSYHgBa3Qctosdxax3w"}
             }.to change {Book.count}.from(0).to(1)
             
             expect(response).to have_http_status(:created)
@@ -82,9 +83,11 @@ describe "books API",  type: :request do
 
     describe 'DELETE /books/:id' do
         let!(:book) {FactoryBot.create(:book, title: "oops with Java", author: first_author) }
+        let!(:user) {FactoryBot.create(:user, password: 'password')}
         it 'deletes a book' do
             expect {
-                delete "/api/v1/books/#{book.id}"
+                delete "/api/v1/books/#{book.id}",
+                headers: {"Authorization" => "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.DiPWrOKsx3sPeVClrm_j07XNdSYHgBa3Qctosdxax3w"}
             }.to change {Book.count}.from(1).to(0)
             expect(response).to have_http_status(:ok)
         end
