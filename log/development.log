@@ -1,0 +1,1356 @@
+Started GET "/" for ::1 at 2022-12-21 22:49:11 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1039.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (133.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221217160805_create_books.rb
+
+
+):
+  
+activerecord (6.1.7) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2022-12-21 22:49:12 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20221217160805_create_books.rb
+
+
+):
+  
+activerecord (6.1.7) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.7) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.7) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.7) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.7) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.7) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBooks (20221217160805)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221217160805"]]
+  [1m[36mTRANSACTION (1619.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-21 17:19:27.149738"], ["updated_at", "2022-12-21 17:19:27.149738"]]
+  [1m[36mTRANSACTION (76.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-12-21 22:49:36 +0530
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.4ms | Allocations: 312)
+Completed 200 OK in 14ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3101)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-12-21 22:49:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2022-12-29 12:32:39 +0530
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 47.8ms | Allocations: 312)
+Completed 200 OK in 73ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 2510)
+
+
+Started GET "/" for ::1 at 2022-12-29 12:32:48 +0530
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.5ms | Allocations: 185)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 819)
+
+
+Started GET "/book" for ::1 at 2022-12-29 12:33:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/book"):
+  
+Started GET "/books" for ::1 at 2022-12-29 12:33:06 +0530
+Processing by BooksController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 179)
+
+
+  
+SyntaxError (/home/mooventhan/Desktop/my-apps/book-store-api-only/app/models/book.rb:2: syntax error, unexpected ':', expecting end
+    validates: author, presence: true, leng...
+             ^
+/home/mooventhan/Desktop/my-apps/book-store-api-only/app/models/book.rb:2: Can't assign to true
+...lidates: author, presence: true, length: {mininum:3}
+...                           ^~~~
+/home/mooventhan/Desktop/my-apps/book-store-api-only/app/models/book.rb:3: syntax error, unexpected ':', expecting end
+    validates: title, presence: :true,lengt...
+             ^):
+  
+app/models/book.rb:2: syntax error, unexpected ':', expecting end
+app/models/book.rb:2: Can't assign to true
+app/models/book.rb:3: syntax error, unexpected ':', expecting end
+app/models/book.rb:2: syntax error, unexpected ':', expecting end
+app/models/book.rb:2: Can't assign to true
+app/models/book.rb:3: syntax error, unexpected ':', expecting end
+app/controllers/books_controller.rb:3:in `index'
+Started GET "/books" for ::1 at 2022-12-29 12:38:09 +0530
+Processing by BooksController#index as */*
+Completed 500 Internal Server Error in 0ms (Allocations: 156)
+
+
+  
+SyntaxError (/home/mooventhan/Desktop/my-apps/book-store-api-only/app/models/book.rb:2: syntax error, unexpected ':', expecting end
+    validates: author, presence: true, leng...
+             ^
+/home/mooventhan/Desktop/my-apps/book-store-api-only/app/models/book.rb:2: Can't assign to true
+...lidates: author, presence: true, length: {mininum:3}
+...                           ^~~~
+/home/mooventhan/Desktop/my-apps/book-store-api-only/app/models/book.rb:3: syntax error, unexpected ':', expecting end
+    validates: title, presence: true,length...
+             ^
+/home/mooventhan/Desktop/my-apps/book-store-api-only/app/models/book.rb:3: Can't assign to true
+...alidates: title, presence: true,length: {minimum:3, maximum:...
+...                           ^~~~):
+  
+app/models/book.rb:2: syntax error, unexpected ':', expecting end
+app/models/book.rb:2: Can't assign to true
+app/models/book.rb:3: syntax error, unexpected ':', expecting end
+app/models/book.rb:3: Can't assign to true
+app/models/book.rb:2: syntax error, unexpected ':', expecting end
+app/models/book.rb:2: Can't assign to true
+app/models/book.rb:3: syntax error, unexpected ':', expecting end
+app/models/book.rb:3: Can't assign to true
+app/controllers/books_controller.rb:3:in `index'
+Started GET "/books" for ::1 at 2022-12-29 12:39:36 +0530
+Processing by BooksController#index as */*
+Completed 500 Internal Server Error in 44ms (Allocations: 517)
+
+
+  
+ArgumentError (Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.):
+  
+app/models/book.rb:2:in `<class:Book>'
+app/models/book.rb:1:in `<main>'
+app/controllers/books_controller.rb:3:in `index'
+Started GET "/books" for ::1 at 2022-12-29 12:41:40 +0530
+Processing by BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+  [1m[36mBook Load (22.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 23.0ms | Allocations: 1790)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (32.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Java"], ["author", "Balagurusamy"], ["created_at", "2022-12-29 17:13:16.999365"], ["updated_at", "2022-12-29 17:13:16.999365"]]
+  [1m[36mTRANSACTION (83.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Python"], ["author", "Denis ritch"], ["created_at", "2022-12-29 17:13:17.120839"], ["updated_at", "2022-12-29 17:13:17.120839"]]
+  [1m[36mTRANSACTION (69.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "programming in c++"], ["author", "John Doe"], ["created_at", "2022-12-29 17:13:17.199272"], ["updated_at", "2022-12-29 17:13:17.199272"]]
+  [1m[36mTRANSACTION (70.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ruby programming"], ["author", "DHH Matz"], ["created_at", "2022-12-29 17:13:17.278290"], ["updated_at", "2022-12-29 17:13:17.278290"]]
+  [1m[36mTRANSACTION (103.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Design pattern"], ["author", "Matzz"], ["created_at", "2022-12-29 17:13:17.388702"], ["updated_at", "2022-12-29 17:13:17.388702"]]
+  [1m[36mTRANSACTION (65.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/books" for ::1 at 2022-12-29 22:43:22 +0530
+Processing by BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.8ms | Allocations: 5361)
+
+
+Started GET "/books.json" for ::1 at 2022-12-29 22:43:26 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1212)
+
+
+Started GET "/books/1.json" for ::1 at 2022-12-29 23:04:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/books/1.json"):
+  
+Started GET "/rails/info" for ::1 at 2022-12-29 23:06:26 +0530
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 3ms (Allocations: 658)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-12-29 23:06:26 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [26 times] (Duration: 28.2ms | Allocations: 3132)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.4ms | Allocations: 983)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 81.5ms | Allocations: 6378)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 82.7ms | Allocations: 6623)
+Completed 200 OK in 120ms (Views: 86.4ms | Allocations: 7687)
+
+
+Started POST "/books" for ::1 at 2022-12-29 23:07:53 +0530
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"Book name", "author"=>"James", "book"=>{"title"=>"Book name", "author"=>"James"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:7:in `create'
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Book name"], ["author", "James"], ["created_at", "2022-12-29 17:37:53.254282"], ["updated_at", "2022-12-29 17:37:53.254282"]]
+  ↳ app/controllers/books_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (151.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:7:in `create'
+Completed 201 Created in 161ms (Views: 1.0ms | ActiveRecord: 151.9ms | Allocations: 4726)
+
+
+Started GET "/rails/info/routes?path=" for ::1 at 2022-12-29 23:08:22 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>""}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1867)
+
+
+Started POST "/books" for ::1 at 2022-12-29 23:09:04 +0530
+Processing by BooksController#create as */*
+  Parameters: {"do"=>"Book name", "na"=>"James", "book"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 124)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: book):
+  
+app/controllers/books_controller.rb:15:in `book_params'
+app/controllers/books_controller.rb:6:in `create'
+Started POST "/books" for ::1 at 2022-12-29 23:09:49 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#create as */*
+  Parameters: {"do"=>"Book name", "na"=>"James", "book"=>{}}
+[31mUnpermitted parameters: :do, :na, :book[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 2754)
+
+
+  
+ArgumentError (Unrecognized status code :unproceaable_entity):
+  
+app/controllers/books_controller.rb:10:in `create'
+Started GET "/books" for ::1 at 2022-12-29 23:26:32 +0530
+Processing by BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+Completed 204 No Content in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 4845)
+
+
+Started GET "/books" for ::1 at 2022-12-29 23:27:34 +0530
+Processing by BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+Completed 204 No Content in 15ms (Views: 13.7ms | ActiveRecord: 1.0ms | Allocations: 5264)
+
+
+Started GET "/books" for ::1 at 2022-12-29 23:27:59 +0530
+Processing by BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.7ms | Allocations: 5245)
+
+
+Started POST "/books" for ::1 at 2022-12-30 08:58:41 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"B", "author"=>"James", "book"=>{"title"=>"B", "author"=>"James"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms | Allocations: 6438)
+
+
+  
+ArgumentError (Unrecognized status code :unproceaable_entity):
+  
+app/controllers/books_controller.rb:10:in `create'
+Started POST "/books" for ::1 at 2022-12-30 08:59:11 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"B", "author"=>"James", "book"=>{"title"=>"B", "author"=>"James"}}
+Completed 422 Unprocessable Entity in 148ms (Views: 144.0ms | ActiveRecord: 0.7ms | Allocations: 6285)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-12-30 14:39:43 +0530
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 19.0ms | Allocations: 3242)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 7.4ms | Allocations: 984)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 55.3ms | Allocations: 6645)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 67.9ms | Allocations: 6893)
+Completed 200 OK in 83ms (Views: 71.8ms | ActiveRecord: 0.0ms | Allocations: 9512)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-12-30 14:39:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/books" for ::1 at 2022-12-30 14:43:13 +0530
+Processing by BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:3:in `index'
+Completed 200 OK in 27ms (Views: 9.9ms | ActiveRecord: 1.5ms | Allocations: 6157)
+
+
+Started DELETE "/books/6" for ::1 at 2022-12-30 14:43:52 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1534)
+
+
+  
+NameError (undefined local variable or method `id' for #<BooksController:0x007f98e80080d8>):
+  
+app/controllers/books_controller.rb:15:in `destroy'
+Started DELETE "/books/6" for ::1 at 2022-12-30 14:44:48 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:15:in `destroy'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:15:in `destroy'
+  [1m[36mBook Destroy (0.7ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/books_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (82.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:15:in `destroy'
+Completed 204 No Content in 148ms (ActiveRecord: 85.5ms | Allocations: 8439)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Started DELETE "/books/6" for ::1 at 2022-12-30 14:53:37 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:15:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:15:in `destroy'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1012)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=6):
+  
+app/controllers/books_controller.rb:15:in `destroy'
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:13:53 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1835)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=6):
+  
+app/controllers/books_controller.rb:16:in `destroy'
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:14:38 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 422 Unprocessable Entity in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2294)
+
+
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:15:08 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 2315)
+
+
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:15:28 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 404 Not Found in 9ms (ActiveRecord: 6.4ms | Allocations: 2269)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=6):
+  
+app/controllers/books_controller.rb:16:in `destroy'
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:31:34 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1854)
+
+
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:32:00 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2279)
+
+
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:33:11 +0530
+  
+SyntaxError (/home/mooventhan/Desktop/my-apps/book-store-api-only/app/controllers/books_controller.rb:25: syntax error, unexpected '}', expecting =>
+    render json: {e.message}, status: :no_content
+                           ^):
+  
+app/controllers/books_controller.rb:25: syntax error, unexpected '}', expecting =>
+app/controllers/books_controller.rb:25: syntax error, unexpected '}', expecting =>
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:33:33 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 204 No Content in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2291)
+
+
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:43:01 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 2231)
+
+
+  
+NoMethodError (undefined method `record' for #<ActiveRecord::RecordNotFound: Couldn't find Book with 'id'=6>):
+  
+app/controllers/books_controller.rb:25:in `not_destroyed'
+Started DELETE "/books/6" for ::1 at 2022-12-30 17:43:17 +0530
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:16:in `destroy'
+Completed 204 No Content in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2290)
+
+
+Started GET "/test" for ::1 at 2022-12-30 17:52:50 +0530
+Processing by BooksController#test_method as */*
+Completed 500 Internal Server Error in 5ms (Allocations: 1370)
+
+
+  
+NoMethodError (undefined method `time_ago_in_words' for #<BooksController:0x007f990cf9f130>):
+  
+app/controllers/books_controller.rb:21:in `test_method'
+Started GET "/test" for ::1 at 2022-12-30 17:54:09 +0530
+Processing by BooksController#test_method as */*
+Completed 500 Internal Server Error in 3ms (Allocations: 1470)
+
+
+  
+NameError (undefined local variable or method `helper' for #<BooksController:0x007f9908092100>):
+  
+app/controllers/books_controller.rb:21:in `test_method'
+Started GET "/test" for ::1 at 2022-12-30 17:54:46 +0530
+  
+Module::DelegationError (ActionView::Helpers::ControllerHelper#action_name delegated to controller.action_name, but controller is nil: #<BooksController:0x0055687ce86928>):
+  
+actionview (6.1.7) lib/action_view/helpers/controller_helper.rb:16:in `rescue in action_name'
+actionview (6.1.7) lib/action_view/helpers/controller_helper.rb:16:in `action_name'
+actionpack (6.1.7) lib/action_controller/metal/instrumentation.rb:22:in `process_action'
+actionpack (6.1.7) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7) lib/abstract_controller/base.rb:165:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/rails/info" for ::1 at 2022-12-30 20:26:00 +0530
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 1ms (Allocations: 560)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-12-30 20:26:00 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 4.6ms | Allocations: 3210)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.8ms | Allocations: 749)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 7.2ms | Allocations: 5944)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 7.6ms | Allocations: 6181)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 7121)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-12-30 20:26:27 +0530
+  
+NoMethodError (undefined method `fetch' for "/version1":String):
+  
+config/routes.rb:4:in `block (2 levels) in <main>'
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2022-12-30 20:28:08 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 4.7ms | Allocations: 2975)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.6ms | Allocations: 160)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4700)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 7.0ms | Allocations: 4783)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 5079)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-12-30 20:28:19 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 4.5ms | Allocations: 2975)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 159)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4700)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 6.4ms | Allocations: 4783)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 5076)
+
+
+Started GET "/rails/info/routes" for ::1 at 2022-12-30 20:28:30 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 5.0ms | Allocations: 2973)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 159)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4698)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 6.6ms | Allocations: 4780)
+Completed 200 OK in 7ms (Views: 7.0ms | Allocations: 5073)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-01-01 22:47:36 +0530
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 40.5ms | Allocations: 3248)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.0ms | Allocations: 984)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 50.5ms | Allocations: 6664)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 52.2ms | Allocations: 6912)
+Completed 200 OK in 68ms (Views: 56.1ms | ActiveRecord: 0.0ms | Allocations: 9541)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-01-01 22:47:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/info/routes" for ::1 at 2023-01-01 22:48:27 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 5.3ms | Allocations: 3210)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.8ms | Allocations: 749)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5936)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 8.6ms | Allocations: 6173)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 7109)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-01-01 22:49:55 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 6.9ms | Allocations: 2973)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.3ms | Allocations: 160)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4698)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 9.0ms | Allocations: 4781)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 5077)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-01-01 22:51:25 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 5.4ms | Allocations: 2974)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 159)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4698)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 7.1ms | Allocations: 4781)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 5078)
+
+
+Started GET "/books" for ::1 at 2023-01-01 22:52:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+Started GET "/api/v1books" for ::1 at 2023-01-01 22:52:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1books"):
+  
+Started GET "/api/v1/books" for ::1 at 2023-01-01 22:52:32 +0530
+Processing by Api::V1::BooksController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/books_controller.rb:6:in `index'
+  [1m[36mBook Load (16.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/api/v1/books_controller.rb:6:in `index'
+Completed 200 OK in 67ms (Views: 47.0ms | ActiveRecord: 20.0ms | Allocations: 6037)
+
+
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAuthors (20230102062944)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "authors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230102062944"]]
+  [1m[36mTRANSACTION (112.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAuthorToBooks (20230102063233)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "books" ADD "author_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_books_on_author_id" ON "books" ("author_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230102063233"]]
+  [1m[36mTRANSACTION (201.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveAuthorFromBooks (20230102063535)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abooks" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "author" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "author_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_abooks_on_author_id" ON "abooks" ("author_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "abooks" ("id","title","author","created_at","updated_at","author_id")
+                     SELECT "id","title","author","created_at","updated_at","author_id" FROM "books"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "books"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "author_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_books_on_author_id" ON "books" ("author_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "books" ("id","title","created_at","updated_at","author_id")
+                     SELECT "id","title","created_at","updated_at","author_id" FROM "abooks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "abooks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230102063535"]]
+  [1m[36mTRANSACTION (582.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Create (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "jk"], ["last_name", "rowling"], ["age", 45], ["created_at", "2023-01-02 06:39:04.794459"], ["updated_at", "2023-01-02 06:39:04.794459"]]
+  [1m[36mTRANSACTION (135.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?)[0m  [["title", "the stone"], ["created_at", "2023-01-02 06:39:50.739243"], ["updated_at", "2023-01-02 06:39:50.739243"], ["author_id", 1]]
+  [1m[36mTRANSACTION (67.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (1.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?)[0m  [["title", "The chamber"], ["created_at", "2023-01-02 06:40:32.026305"], ["updated_at", "2023-01-02 06:40:32.026305"], ["author_id", 1]]
+  [1m[36mTRANSACTION (183.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors" ORDER BY "authors"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."author_id" = ? /* loading for inspect */ LIMIT ?[0m  [["author_id", 1], ["LIMIT", 11]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/api/v1/books" for ::1 at 2023-01-02 12:13:28 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/api/v1/books_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 0.6ms | Allocations: 8072)
+
+
+Started GET "/api/v1/books" for ::1 at 2023-01-02 13:23:05 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::BooksController#index as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3729)
+
+
+  
+SyntaxError (/home/mooventhan/Desktop/my-apps/book-store-api-only/app/representer/books_representer.rb:2: syntax error, unexpected '(', expecting ';' or '\n'
+  def def initialize(books)
+                    ^
+/home/mooventhan/Desktop/my-apps/book-store-api-only/app/representer/books_representer.rb:20: syntax error, unexpected end, expecting end-of-input):
+  
+app/representer/books_representer.rb:2: syntax error, unexpected '(', expecting ';' or '\n'
+app/representer/books_representer.rb:20: syntax error, unexpected end, expecting end-of-input
+app/representer/books_representer.rb:2: syntax error, unexpected '(', expecting ';' or '\n'
+app/representer/books_representer.rb:20: syntax error, unexpected end, expecting end-of-input
+app/controllers/api/v1/books_controller.rb:7:in `index'
+Started GET "/api/v1/books" for ::1 at 2023-01-02 13:23:55 +0530
+Processing by Api::V1::BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms | Allocations: 7186)
+
+
+  
+NoMethodError (undefined method `first_name' for nil:NilClass):
+  
+app/representer/books_representer.rb:11:in `block in as_json'
+app/representer/books_representer.rb:7:in `map'
+app/representer/books_representer.rb:7:in `as_json'
+app/controllers/api/v1/books_controller.rb:7:in `index'
+Started GET "/api/v1/books" for ::1 at 2023-01-02 13:24:47 +0530
+Processing by Api::V1::BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 5043)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.7ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (156.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.7ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1161.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (72.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (65.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.7ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (73.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+Started GET "/api/v1/books" for ::1 at 2023-01-02 13:29:21 +0530
+Processing by Api::V1::BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/representer/books_representer.rb:11:in `block in as_json'
+  [1m[36mCACHE Author Load (0.0ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/representer/books_representer.rb:11:in `block in as_json'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 10851)
+
+
+Started GET "/api/v1/books" for ::1 at 2023-01-02 13:32:00 +0530
+Processing by Api::V1::BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/representer/books_representer.rb:11:in `block in as_json'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.3ms | Allocations: 10436)
+
+
+  
+NameError (undefined local variable or method `book' for #<BooksRepresenter:0x00005596f3aa8680>
+Did you mean?  books
+               @books):
+  
+app/representer/books_representer.rb:23:in `author_name'
+app/representer/books_representer.rb:13:in `block in as_json'
+app/representer/books_representer.rb:7:in `map'
+app/representer/books_representer.rb:7:in `as_json'
+app/controllers/api/v1/books_controller.rb:7:in `index'
+Started GET "/api/v1/books" for ::1 at 2023-01-02 13:33:38 +0530
+Processing by Api::V1::BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/representer/books_representer.rb:11:in `block in as_json'
+  [1m[36mCACHE Author Load (0.0ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/representer/books_representer.rb:11:in `block in as_json'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 9984)
+
+
+Started GET "/api/v1/books" for ::1 at 2023-01-02 13:33:53 +0530
+Processing by Api::V1::BooksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/representer/books_representer.rb:7:in `map'
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/representer/books_representer.rb:23:in `author_name'
+  [1m[36mCACHE Author Load (0.0ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/representer/books_representer.rb:23:in `author_name'
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 9974)
+
+
+Started POST "/books" for ::1 at 2023-01-03 09:58:58 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/books"):
+  
+Started POST "/api/v1/books" for ::1 at 2023-01-03 09:59:15 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Andy"], ["last_name", "Weir"], ["age", 48], ["created_at", "2023-01-03 04:29:15.896718"], ["updated_at", "2023-01-03 04:29:15.896718"]]
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (190.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 190.7ms | Allocations: 11793)
+
+
+  
+SyntaxError (/home/mooventhan/Desktop/my-apps/book-store-api-only/app/representer/book_representer.rb:22: syntax error, unexpected end, expecting end-of-input):
+  
+app/representer/book_representer.rb:22: syntax error, unexpected end, expecting end-of-input
+app/representer/book_representer.rb:22: syntax error, unexpected end, expecting end-of-input
+app/controllers/api/v1/books_controller.rb:12:in `create'
+Started POST "/api/v1/books" for ::1 at 2023-01-03 09:59:51 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mAuthor Create (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Andy"], ["last_name", "Weir"], ["age", 48], ["created_at", "2023-01-03 04:29:51.138838"], ["updated_at", "2023-01-03 04:29:51.138838"]]
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (169.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 170.5ms | Allocations: 9457)
+
+
+  
+NoMethodError (undefined method `save' for #<BookRepresenter:0x00007f8c842b1728>):
+  
+app/controllers/api/v1/books_controller.rb:13:in `create'
+Started POST "/api/v1/books" for ::1 at 2023-01-03 10:00:14 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Andy"], ["last_name", "Weir"], ["age", 48], ["created_at", "2023-01-03 04:30:14.226752"], ["updated_at", "2023-01-03 04:30:14.226752"]]
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (159.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 159.3ms | Allocations: 3697)
+
+
+  
+NoMethodError (undefined method `save' for #<BookRepresenter:0x00007f8c9c0721e8>):
+  
+app/controllers/api/v1/books_controller.rb:13:in `create'
+Started POST "/api/v1/books" for ::1 at 2023-01-03 10:15:52 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Andy"], ["last_name", "Weir"], ["age", 48], ["created_at", "2023-01-03 04:45:52.636569"], ["updated_at", "2023-01-03 04:45:52.636569"]]
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (104.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:14:in `create'
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/books_controller.rb:14:in `create'
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?)[0m  [["title", "ruby programming"], ["created_at", "2023-01-03 04:45:52.821923"], ["updated_at", "2023-01-03 04:45:52.821923"], ["author_id", 5]]
+  ↳ app/controllers/api/v1/books_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (64.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:14:in `create'
+Completed 201 Created in 264ms (Views: 0.5ms | ActiveRecord: 171.1ms | Allocations: 60479)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" /* loading for inspect */ LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" /* loading for inspect */ LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" /* loading for inspect */ LIMIT ? OFFSET ?[0m  [["LIMIT", 2], ["OFFSET", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "books" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 2], ["OFFSET", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/rails/info/routes" for ::1 at 2023-01-03 16:33:27 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 31.5ms | Allocations: 3358)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.4ms | Allocations: 984)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 75.5ms | Allocations: 6819)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 84.4ms | Allocations: 7067)
+Completed 200 OK in 381ms (Views: 121.2ms | ActiveRecord: 0.0ms | Allocations: 9805)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-01-03 16:33:28 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230104060657)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230104060657"]]
+  [1m[36mTRANSACTION (112.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN TRANSACTION; END;[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "bookseller"], ["created_at", "2023-01-04 07:21:34.392659"], ["updated_at", "2023-01-04 07:21:34.392659"]]
+  [1m[36mTRANSACTION (169.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (27.0ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/rails/info" for ::1 at 2023-01-04 12:53:11 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms | Allocations: 1544)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-01-04 12:53:11 +0530
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb
+  Rendering /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 38.0ms | Allocations: 3357)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/actionpack-6.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 3.5ms | Allocations: 988)
+  Rendered /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 69.7ms | Allocations: 6821)
+  Rendered layout /usr/share/rvm/gems/ruby-2.6.6/gems/railties-6.1.7/lib/rails/templates/layouts/application.html.erb (Duration: 71.0ms | Allocations: 7069)
+Completed 200 OK in 180ms (Views: 102.1ms | ActiveRecord: 0.0ms | Allocations: 8766)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-01-04 12:53:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/info/routes?path=auth" for ::1 at 2023-01-04 12:53:16 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"auth"}
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1287)
+
+
+Started GET "/rails/info/routes?path=auth" for ::1 at 2023-01-04 12:53:16 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"auth"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 654)
+
+
+Started GET "/rails/info/routes?path=a" for ::1 at 2023-01-04 12:53:17 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"a"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1386)
+
+
+Started GET "/rails/info/routes?path=authen" for ::1 at 2023-01-04 12:53:20 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"authen"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 656)
+
+
+Started GET "/rails/info/routes?path=authen" for ::1 at 2023-01-04 12:53:21 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"authen"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 654)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 12:58:04 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:7:in `create'
+Completed 201 Created in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 4460)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 13:00:11 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/authentication_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:7:in `create'
+Completed 201 Created in 6ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 3889)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPasswordDigestToUser (20230104074540)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230104074540"]]
+  [1m[36mTRANSACTION (140.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:11:26 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/authentication_controller.rb:16:in `user'
+app/controllers/api/v1/authentication_controller.rb:9:in `create'
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:11:48 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 7802)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/api/v1/authentication_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "password_digest" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2023-01-04 09:43:51.877165"], ["password_digest", "$2a$12$QunVyuqhN1dTs5SrVyiDmOlqeOjTjQ.0jHVwpvUZRZqMlcywhQkPK"], ["id", 1]]
+  [1m[36mTRANSACTION (153.5ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:14:26 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 201 Created in 208ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 3823)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:14:33 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 401 Unauthorized in 205ms (ActiveRecord: 0.1ms | Allocations: 549)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:14:45 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 401 Unauthorized in 203ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:14:52 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 201 Created in 204ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 630)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:15:08 +0530
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "username" : "bookseller",
+    
+}
+Processing by Api::V1::AuthenticationController#create as */*
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 111)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (767: unexpected token at '{
+    "username" : "bookseller",
+    
+}'):
+  
+app/controllers/api/v1/authentication_controller.rb:8:in `create'
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:15:43 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "authentication"=>{"username"=>"bookseller"}}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:15:59 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 201 Created in 208ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 612)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:16:08 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"u", "password"=>"[FILTERED]", "authentication"=>{"username"=>"u", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "u"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 899)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/api/v1/authentication_controller.rb:9:in `create'
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:16:13 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 201 Created in 205ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 615)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:27:31 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 201 Created in 209ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1111)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:27:32 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 201 Created in 206ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 613)
+
+
+Started POST "/api/v1/authenticate" for ::1 at 2023-01-04 15:27:34 +0530
+Processing by Api::V1::AuthenticationController#create as */*
+  Parameters: {"username"=>"bookseller", "password"=>"[FILTERED]", "authentication"=>{"username"=>"bookseller", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "bookseller"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/authentication_controller.rb:16:in `user'
+Completed 201 Created in 206ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 616)
+
+
+Started POST "/api/v1/books" for ::1 at 2023-01-04 16:38:04 +0530
+  
+SyntaxError (/home/mooventhan/Desktop/my-apps/book-store-api-only/app/controllers/api/v1/books_controller.rb:56: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/api/v1/books_controller.rb:56: syntax error, unexpected end, expecting end-of-input
+app/controllers/api/v1/books_controller.rb:56: syntax error, unexpected end, expecting end-of-input
+Started POST "/api/v1/books" for ::1 at 2023-01-04 16:38:34 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+Completed 500 Internal Server Error in 0ms (Allocations: 173)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/services/authentication_token_service.rb:10:in `decode'
+app/controllers/api/v1/books_controller.rb:34:in `authenticate_user'
+Started POST "/api/v1/books" for ::1 at 2023-01-04 16:40:05 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+Completed 500 Internal Server Error in 0ms (Allocations: 90)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/services/authentication_token_service.rb:10:in `decode'
+app/controllers/api/v1/books_controller.rb:34:in `authenticate_user'
+Started POST "/api/v1/books" for ::1 at 2023-01-04 16:40:58 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/books_controller.rb:35:in `authenticate_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 123], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/books_controller.rb:35:in `authenticate_user'
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 4823)
+
+
+Started POST "/api/v1/books" for ::1 at 2023-01-04 16:41:54 +0530
+Processing by Api::V1::BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"ruby programming"}, "author"=>{"first_name"=>"Andy", "last_name"=>"Weir", "age"=>48}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/books_controller.rb:35:in `authenticate_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:16:in `create'
+  [1m[36mAuthor Create (0.3ms)[0m  [1m[32mINSERT INTO "authors" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Andy"], ["last_name", "Weir"], ["age", 48], ["created_at", "2023-01-04 11:11:54.630375"], ["updated_at", "2023-01-04 11:11:54.630375"]]
+  ↳ app/controllers/api/v1/books_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (71.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:18:in `create'
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/books_controller.rb:18:in `create'
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?)[0m  [["title", "ruby programming"], ["created_at", "2023-01-04 11:11:54.729681"], ["updated_at", "2023-01-04 11:11:54.729681"], ["author_id", 6]]
+  ↳ app/controllers/api/v1/books_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (63.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/books_controller.rb:18:in `create'
+Completed 201 Created in 184ms (Views: 0.3ms | ActiveRecord: 137.8ms | Allocations: 23104)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" ORDER BY "authors"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  [1m[36mAuthor Load (0.5ms)[0m  [1m[34mSELECT "authors".* FROM "authors" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
